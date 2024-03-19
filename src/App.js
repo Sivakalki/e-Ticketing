@@ -6,6 +6,7 @@ import BookTicket from './BookTicket';
 import Account from './Account';
 import Signup from './Signup';
 import Login from './Login';
+import SearchTrains from './SearchTrains';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/about" element={<Account />} />
           <Route path="/signup" element={<Signup />} />
           <Route path='/login' element={<Login />}></Route>
+          <Route path='/SearchTrains' element={<SearchTrains/>}></Route>
         </Routes>
 
       </div>

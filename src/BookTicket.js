@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 // import { useLocation } from 'react-router-dom';
 function BookTicket() {
@@ -6,6 +7,7 @@ function BookTicket() {
     return (
         <div>
             <h1>Book Ticket Here</h1>
+            <Link to='/SearchTrains'>Search Trains</Link>
         </div>
     )
 }
