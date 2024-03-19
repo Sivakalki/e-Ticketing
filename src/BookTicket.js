@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import './BookTicket.css'; // Import the CSS file for styling
+import { Link } from "react-router-dom";
 
 function BookTicket() {
     const [passengers, setPassengers] = useState([{ id: 1, name: '', gender: '', age: '' }]);
