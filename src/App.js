@@ -6,7 +6,6 @@ import BookTicket from './BookTicket';
 import Account from './Account';
 import Signup from './Signup';
 import Login from './Login';
-
 function App() {
   return (
     <Router>
@@ -24,7 +23,7 @@ function App() {
           <Route path='/' exact element={<HomePage />} />
           <Route path="/book-tkt" element={<BookTicket />} />
           <Route path="/about" element={<Account />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/signup" element={<Signup></Signup>} />
           <Route path='/login' element={<Login />}></Route>
         </Routes>
 

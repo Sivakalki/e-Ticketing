@@ -13,7 +13,7 @@ app.use('/api', require('./routes')); // Example route
 
 app.post('/signup',async (req,res) =>{
     const { username, email, password, dob, age, phone } = req.body;
-
+    
     try {
         const sql = `
             INSERT INTO users (username, email, password, dob, age, phone)
