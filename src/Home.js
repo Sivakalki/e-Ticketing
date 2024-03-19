@@ -19,9 +19,7 @@ export default function HomePage() {
             <h2>This is home page</h2>
             <div>
                 {linkClicked && <Link to='/book-tkt' onClick={handleLinkClick}>Book a ticket</Link>}
-            </div>
-           
-            
+            </div>        
         </div>
 
     )
