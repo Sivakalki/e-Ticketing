@@ -5,6 +5,7 @@ body {
     background-color: #f0f0f0;
 }
 
+
 .dob{
     padding-bottom: 20px;
     padding-top: 20px;
@@ -56,4 +57,12 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
     background-color: #45a049;
+}
+.red{
+    color: red;
+}
+.error{
+    font-size: 2vh;
+    color: darkred !important;
+    background-color: red !important;
 }

@@ -17,3 +17,5 @@ pool.query('SELECT NOW()', (err, res) => {
     console.log('Connected to PostgreSQL');
   }
 });
+
+module.exports = pool; 
