@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import UserContextProvider from './UserContextProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-   <div>
-    <App></App>
-   </div>
+   <UserContextProvider>
+      <App></App>
+   </UserContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

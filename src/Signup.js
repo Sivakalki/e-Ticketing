@@ -68,7 +68,7 @@ export default function Signup(){
     return(
         <div className="container">
             <h2>Sign Up for Train E-Ticketing</h2>
-            <form method="post" onSubmit={handleSubmit}>
+            <form className="formm" method="post" onSubmit={handleSubmit}>
                 {load && <div className="spinner"></div> }
                 <label htmlFor="username">User Name:</label>
                 <input  onChange={handleChange} type="text" id="username" name="username" value={formData.username} required />

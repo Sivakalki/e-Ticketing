@@ -1,7 +1,11 @@
-import { useState } from "react";
+import { useState , useContext } from "react";
 import {Link} from "react-router-dom";
 import axios from 'axios';
 import './Login.css';
+import UserContext from "./UserContext";
+// import { useContext } from './UserContext';
+
+
 export default function Login(){
     const [user,setuser]=useState({
         email:'',
@@ -9,6 +13,8 @@ export default function Login(){
         error:''
     });
     const [loading,setloading] = useState(false);
+    const [username, setUsername] = useState('');
+    const { user:MainUser ,setUser } = useContext(UserContext);
     const [err,seterr] = useState('');
     const [msg,setmsg]=useState('');
     const checkUser=async(e)=>{
@@ -19,6 +25,13 @@ export default function Login(){
             const response = await axios.post('http://localhost:5000/login',user);
             setmsg(response.data.message);
             seterr('');
+            console.log(response.data.name);
+            setUsername(response.data.name);
+            // console.log(username);
+            setUser(response.data.name);
+            console.log(MainUser);
+            console.log("juekalf");
+
         }
         catch(error){
             console.error('Error:',error.response.data.error);
@@ -42,7 +55,7 @@ export default function Login(){
             {msg && <p className="Green">{msg}</p>}
             {err && <p className="red">{err}</p>}
             <h2>Log-in</h2>
-            <form onSubmit={checkUser} method="post">
+            <form className="form" onSubmit={checkUser} method="post">
               {loading && <div className="spinner" />}
                 <label htmlFor="email">Email:</label>
                 <input onChange={changee} type="text" id="email" name="email" required />

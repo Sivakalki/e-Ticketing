@@ -1,0 +1,29 @@
+.black{
+    color: black;
+}
+.blue{
+    color: blue;
+}
+.Red{
+    color: red;
+}
+.completepage{
+    
+
+    background-image: url('./bgImage.jpg'); /* Use the imported background image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Adjust the height as needed */
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    color: white; /* Set text color to contrast with the background */
+    text-align: center;
+
+}
+
+.op100{
+    opacity: 100;
+    color: black;
+}

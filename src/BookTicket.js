@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link  } from "react-router-dom";
+import { useState } from "react";
 
 function BookTicket() {
     const [passengers, setPassengers] = useState([{ id: 1, name: '', gender: '', age: '' }]);

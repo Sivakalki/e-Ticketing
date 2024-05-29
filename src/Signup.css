@@ -5,8 +5,10 @@ body {
     background-color: #f0f0f0;
 }
 
-
-.dob{
+.formm{
+    max-height: 87vh;
+}
+/* .dob{
     padding-bottom: 20px;
     padding-top: 20px;
     display: flex;
@@ -18,7 +20,7 @@ body {
 .dob input{
     margin-right: 7vw;
     height: 4vh;
-}
+} */
 
 .lang{
     padding-bottom: 10px;
@@ -31,6 +33,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20vh;
 }
 h2 {
     text-align: center;
@@ -66,3 +69,13 @@ input[type="submit"]:hover {
     color: darkred !important;
     background-color: red !important;
 }
+form{
+    height: 92vh;
+    width: 361px;
+    margin-top: 3vh;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
