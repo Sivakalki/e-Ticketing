@@ -60,3 +60,7 @@ Follow these steps to launch the application locally:
    npm start
 
 8. **Access the application**: Open http://localhost:3000 in your browser.
+
+
+**Screenshots**
+
